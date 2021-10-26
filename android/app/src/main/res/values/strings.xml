@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Loja do Cindi</string>
+
+    <string name="facebook_app_id">122330343083700</string>
+
+    <string name="fb_login_protocol_scheme">fb122330343083700</string>
+
+</resources>
