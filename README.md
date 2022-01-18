@@ -18,3 +18,5 @@ This reference project shows how to implement a virtual store (e-commerce) in Fl
 The project uses Firebase for (remote) storage of the data and manage the products and images.
   
 # App Overview
+  
+The application is composed by several functionalities as a typical e-commerce app.
