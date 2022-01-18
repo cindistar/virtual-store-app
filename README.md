@@ -39,7 +39,7 @@ The app uses the following packages:
  - [faker](https://pub.dev/packages/faker)
  - [brasil_fields](https://pub.dev/packages/brasil_fields)
  - [flutter_staggered_grid_view](https://pub.dev/packages/flutter_staggered_grid_view)
- - [ gallery_saver](https://pub.dev/packages/ gallery_saver)
+ - [gallery_saver](https://pub.dev/packages/gallery_saver)
  - [image_cropper](https://pub.dev/packages/image_cropper)
  - [map_launcher](https://pub.dev/packages/map_launcher)
  - [image_picker](https://pub.dev/packages/image_picker)
