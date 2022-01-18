@@ -28,9 +28,8 @@ The application is composed by several functionalities as a typical e-commerce a
 
 The app uses the following packages:
  
- [provider](https://pub.dev/packages/path_provider)
-  <p>
- [path_provider](https://pub.dev/packages/path_provider) 
+ [.][provider](https://pub.dev/packages/path_provider)
+  
   alphabet_list_scroll_view: 
   brasil_fields: 
   carousel_pro: 
