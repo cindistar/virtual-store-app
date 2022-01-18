@@ -8,4 +8,10 @@ This reference project shows how to implement a vitual store (e-commerce) in Flu
   <img src="web/icons/pic_3.png" width="250" />
   <img src="web/icons/pic_3B.png" width="250" />
   <img src="web/icons/pic_4.png" width="250" />
+  <img src="web/icons/pic_5.png" width="250" />
+  <img src="web/icons/pic_6.png" width="250" />
+  <img src="web/icons/pic_7.png" width="250" />
+  <img src="web/icons/pic_8.png" width="250" />
+  <img src="web/icons/pic_9.png" width="250" />
+  <img src="web/icons/pic_10.png" width="250" />
 
