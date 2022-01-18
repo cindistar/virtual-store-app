@@ -29,17 +29,25 @@ The application is composed by several functionalities as a typical e-commerce a
 The app uses the following packages:
  
  - [provider](https://pub.dev/packages/path_provider)
+ - [cloud_firestore](https://pub.dev/packages/cloud_firestore)
+ - [firebase_auth](https://pub.dev/packages/firebase_auth)
+ - [firebase_storage:](https://pub.dev/packages/firebase_storage)
+ - [provider](https://pub.dev/packages/path_provider)
+ - [provider](https://pub.dev/packages/path_provider)
+ - [provider](https://pub.dev/packages/path_provider)
+ - [provider](https://pub.dev/packages/path_provider)
+ - [provider](https://pub.dev/packages/path_provider)
+ - [provider](https://pub.dev/packages/path_provider)
+ - [provider](https://pub.dev/packages/path_provider)
+ - [provider](https://pub.dev/packages/path_provider)
   
   alphabet_list_scroll_view: 
   brasil_fields: 
   carousel_pro: 
-  cloud_firestore: 
   credit_card_type_detector: 
   cupertino_icons: 
   dio:
   faker: 
-  firebase_auth: 
-  firebase_storage:
   flip_card: 
   flutter:
     sdk: flutter
@@ -53,8 +61,6 @@ The app uses the following packages:
   lint:
   map_launcher: 
   mask_text_input_formatter: 
-  path_provider:
-  provider: 
   screenshot: 
   sliding_up_panel:
   transparent_image:
