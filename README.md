@@ -4,7 +4,7 @@ A Flutter course from Udemy by Daniel Sciolfi.
 This reference project shows how to implement a vitual store (e-commerce) in Flutter.
 
 <p float="left">
-  <img src="/![pic_1](https://user-images.githubusercontent.com/45148915/149857889-edc6cbd6-4c15-4652-ac3e-dd7fcb63ae19.png)" width="100" />
+  <img src="/pic_1.png" width="100" />
   <img src="/img2.png" width="100" /> 
   <img src="/img3.png" width="100" />
 </p>
