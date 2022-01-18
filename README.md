@@ -20,3 +20,39 @@ The project uses Firebase for (remote) storage of the data and manage the produc
 # App Overview
   
 The application is composed by several functionalities as a typical e-commerce app.
+
+# Packages
+  
+The application is composed by several functionalities as a typical e-commerce app.
+The app uses the following packages:
+  
+  alphabet_list_scroll_view: 
+  brasil_fields: 
+  carousel_pro: 
+  cloud_firestore: 
+  credit_card_type_detector: 
+  cupertino_icons: 
+  dio:
+  faker: 
+  firebase_auth: 
+  firebase_storage:
+  flip_card: 
+  flutter:
+    sdk: flutter
+  flutter_facebook_login: 
+  flutter_signin_button: 
+  flutter_staggered_grid_view: 
+  gallery_saver: 
+  geolocator: 
+  image_cropper: 
+  image_picker: 
+  lint:
+  map_launcher: 
+  mask_text_input_formatter: 
+  path_provider:
+  provider: 
+  screenshot: 
+  sliding_up_panel:
+  transparent_image:
+  url_launcher: 
+  uuid: 
