@@ -4,6 +4,7 @@ A Flutter course from Udemy by Daniel Sciolfi.
 This reference project shows how to implement a virtual store (e-commerce) in Flutter:
 <p float="left">
   <img src="web/icons/pic_1.png" width="250" />
+   <img src="web/icons/pic_11.png" width="250" />
   <img src="web/icons/pic_2.png" width="250" />
   <img src="web/icons/pic_3.png" width="250" />
   <img src="web/icons/pic_3B.png" width="250" />
@@ -19,11 +20,11 @@ The project uses Firebase for (remote) storage of the data and manage the produc
   
 # App Overview
   
-The application is composed by several functionalities as a typical e-commerce app.
+The application is composed by several functionalities as a typical e-commerce app such as: login, logout,
+  cart screen, orders, payment and so forth. It also includes a 
 
 # Packages
-  
-The application is composed by several functionalities as a typical e-commerce app.
+
 The app uses the following packages:
   
   alphabet_list_scroll_view: 
