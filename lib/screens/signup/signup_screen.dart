@@ -15,7 +15,7 @@ class SignUpScreen extends StatelessWidget {
       key: scaffoldKey,
       appBar: AppBar(
         title: Text(
-          'Criar Conta',
+          'Create Account',
         ),
         centerTitle: true,
       ),
@@ -31,13 +31,13 @@ class SignUpScreen extends StatelessWidget {
                   shrinkWrap: true,
                   children: [
                     TextFormField(
-                      decoration: InputDecoration(hintText: 'Nome Completo'),
+                      decoration: InputDecoration(hintText: 'Full Name'),
                       enabled: !userManager.loading,
                       validator: (name) {
                         if (name.isEmpty)
-                          return 'Campo obrigatório';
+                          return 'Required Field';
                         else if (name.trim().split(' ').length <= 1)
-                          return 'Preencha seu nome completo';
+                          return 'Please fill in your name';
                         return null;
                       },
                       onSaved: (name) => user.name = name,
@@ -51,8 +51,8 @@ class SignUpScreen extends StatelessWidget {
                       enabled: !userManager.loading,
                       validator: (email) {
                         if (email.isEmpty)
-                          return 'Campo obrigatório';
-                        else if (!emailValid(email)) return 'E-mail inválido';
+                          return 'Required Field';
+                        else if (!emailValid(email)) return 'Invalid Email';
                         return null;
                       },
                       onSaved: (email) => user.email = email,
@@ -61,13 +61,13 @@ class SignUpScreen extends StatelessWidget {
                       height: 16,
                     ),
                     TextFormField(
-                      decoration: InputDecoration(hintText: 'Senha'),
+                      decoration: InputDecoration(hintText: 'Password'),
                       obscureText: true,
                       enabled: !userManager.loading,
                       validator: (pass) {
                         if (pass.isEmpty)
-                          return 'Campo obrigatório';
-                        else if (pass.length < 6) return 'Senha muito curta';
+                          return 'Required Field';
+                        else if (pass.length < 6) return 'Password is too short';
                         return null;
                       },
                       onSaved: (pass) => user.password = pass,
@@ -76,13 +76,13 @@ class SignUpScreen extends StatelessWidget {
                       height: 16,
                     ),
                     TextFormField(
-                      decoration: InputDecoration(hintText: 'Repita a senha'),
+                      decoration: InputDecoration(hintText: 'Repeat your password'),
                       obscureText: true,
                       enabled: !userManager.loading,
                       validator: (pass) {
                         if (pass.isEmpty)
-                          return 'Campo obrigatório';
-                        else if (pass.length < 6) return 'Senha muito curta';
+                          return 'Required Field';
+                        else if (pass.length < 6) return 'Password is too short';
                         return null;
                       },
                       onSaved: (pass) => user.confirmPassword = pass,
@@ -100,7 +100,7 @@ class SignUpScreen extends StatelessWidget {
                                   // ignore: deprecated_member_use
                                   scaffoldKey.currentState.showSnackBar(
                                     SnackBar(
-                                      content: Text('Senhas não coincidem!'),
+                                      content: Text('Passwords don\'t match!'),
                                       backgroundColor: Colors.red,
                                     ),
                                   );
@@ -116,7 +116,7 @@ class SignUpScreen extends StatelessWidget {
                                       scaffoldKey.currentState.showSnackBar(
                                         SnackBar(
                                           content:
-                                              Text('Falha ao cadastrar: $e'),
+                                              Text('Fail to register: $e'),
                                           backgroundColor: Colors.red,
                                         ),
                                       );
@@ -129,7 +129,7 @@ class SignUpScreen extends StatelessWidget {
                                   AlwaysStoppedAnimation(Colors.white),
                             )
                           : Text(
-                              'Criar Conta',
+                              'Create Account',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 15,

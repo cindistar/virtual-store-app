@@ -11,7 +11,7 @@ class CartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Carrinho'),
+        title: Text('Cart'),
         centerTitle: true,
       ),
       body: Consumer<CartManager>(
@@ -23,7 +23,7 @@ class CartScreen extends StatelessWidget {
           if (cartManager.items.isEmpty) {
             return EmptyCard(
               iconData: Icons.remove_shopping_cart,
-              title: 'Nenhum produto no carrinho!',
+              title: 'No product into the cart!',
             );
           }
 
@@ -35,7 +35,7 @@ class CartScreen extends StatelessWidget {
                     .toList(),
               ),
               PriceCard(
-                buttonText: 'Continuar para entrega',
+                buttonText: 'Continue to delivery',
                 onPressed: cartManager.isCartValid
                     ? () {
                         Navigator.of(context).pushNamed('/address');

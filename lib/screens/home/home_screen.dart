@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                 elevation: 0,
                 backgroundColor: Colors.transparent,
                 flexibleSpace: FlexibleSpaceBar(
-                  title: Text('Loja da Cindi'),
+                  title: Text('Cindi\'\s Store' ),
                   centerTitle: true,
                 ),
                 actions: [
@@ -49,14 +49,14 @@ class HomeScreen extends StatelessWidget {
                         if (homeManager.editing) {
                           return PopupMenuButton(
                             onSelected: (e) {
-                              if (e == 'Salvar') {
+                              if (e == 'Save') {
                                 homeManager.saveEditing();
                               } else {
                                 homeManager.discardEditing();
                               }
                             },
                             itemBuilder: (_) {
-                              return ['Salvar', 'Descartar'].map((e) {
+                              return ['Save', 'Delete'].map((e) {
                                 return PopupMenuItem(
                                   value: e,
                                   child: Text(e),

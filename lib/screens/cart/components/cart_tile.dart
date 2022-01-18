@@ -44,7 +44,7 @@ class CartTile extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.symmetric(vertical: 8),
                           child: Text(
-                            'Tamanho: ${cartProduct.size}',
+                            'Size: ${cartProduct.size}',
                             style: TextStyle(fontWeight: FontWeight.w300),
                           ),
                         ),
@@ -52,7 +52,7 @@ class CartTile extends StatelessWidget {
                           builder: (_, cartProduct, __) {
                             if (cartProduct.hasStock)
                               return Text(
-                                'R\$ ${cartProduct.unitPrice.toStringAsFixed(2)}',
+                                '\$ ${cartProduct.unitPrice.toStringAsFixed(2)}',
                                 style: TextStyle(
                                   color: Theme.of(context).primaryColor,
                                   fontSize: 16,
@@ -61,7 +61,7 @@ class CartTile extends StatelessWidget {
                               );
                             else
                               return Text(
-                                'Sem estoque disponível',
+                                'Out of stock',
                                 style: TextStyle(
                                   color: Colors.red,
                                   fontSize: 12,

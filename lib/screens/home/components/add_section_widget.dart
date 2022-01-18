@@ -18,7 +18,7 @@ class AddSectionWidget extends StatelessWidget {
               homeManager.addSection(Section(type: 'List'));
             },
             textColor: Colors.white,
-            child: Text('Adicionar Lista'),
+            child: Text('Add List'),
           ),
         ),
         Expanded(
@@ -28,7 +28,7 @@ class AddSectionWidget extends StatelessWidget {
               homeManager.addSection(Section(type: 'Staggered'));
             },
             textColor: Colors.white,
-            child: Text('Adicionar Grade'),
+            child: Text('Add Grid'),
           ),
         ),
       ],

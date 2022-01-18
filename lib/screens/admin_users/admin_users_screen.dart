@@ -12,7 +12,7 @@ class AdminUsersScreen extends StatelessWidget {
     return Scaffold(
       drawer: CustomDrawer(),
       appBar: AppBar(
-        title: Text('Usuário'),
+        title: Text('User'),
         centerTitle: true,
       ),
       body: Consumer<AdminUsersManager>(

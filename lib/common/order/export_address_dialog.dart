@@ -14,7 +14,7 @@ class ExportAddressDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text('Endereço de Entrega'),
+      title: Text('Ship-to Address'),
       content: Screenshot(
         controller: screenshotController,
         child: Container(
@@ -30,15 +30,18 @@ class ExportAddressDialog extends StatelessWidget {
       ),
       contentPadding: EdgeInsets.fromLTRB(16, 16, 16, 0),
       actions: [
-        // ignore: deprecated_member_use
-        FlatButton(
+        TextButton(
           onPressed: () async {
             Navigator.of(context).pop();
-            final file = await screenshotController.capture();
-            await GallerySaver.saveImage(file.path);
+            var file = await screenshotController.capture();
+            await GallerySaver.saveImage(file.toString());
           },
-          textColor: Theme.of(context).primaryColor,
-          child: Text('Exportar'),
+          child: Text(
+            'Export',
+            style: TextStyle(
+              color: Theme.of(context).primaryColor,
+            )
+          ),
         )
       ],
     );

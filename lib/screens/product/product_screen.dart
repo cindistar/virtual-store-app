@@ -84,7 +84,7 @@ class ProductScreen extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'R\$ ${product.basePrice.toStringAsFixed(2)}',
+                    '\$ ${product.basePrice.toStringAsFixed(2)}',
                     style: TextStyle(
                       fontSize: 22.0,
                       fontWeight: FontWeight.bold,
@@ -94,7 +94,7 @@ class ProductScreen extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 16, bottom: 8),
                     child: Text(
-                      'Descrição',
+                      'Description',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
@@ -111,7 +111,7 @@ class ProductScreen extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: 16, bottom: 8),
                       child: Text(
-                        'Este produto não está mais disponível',
+                        'Not available',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
@@ -123,7 +123,7 @@ class ProductScreen extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: 16, bottom: 8),
                       child: Text(
-                        'Tamanhos',
+                        'Size',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
@@ -164,8 +164,8 @@ class ProductScreen extends StatelessWidget {
                             textColor: Colors.white,
                             child: Text(
                               userManager.isLoggedIn
-                                  ? 'Adicionar ao Carrinho'
-                                  : 'Entre para Comprar',
+                                  ? 'Add to cart'
+                                  : 'Login to purchase',
                               style: TextStyle(
                                 fontSize: 18,
                               ),

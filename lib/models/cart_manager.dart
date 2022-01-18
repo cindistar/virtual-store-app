@@ -146,7 +146,7 @@ class CartManager extends ChangeNotifier {
       loading = false;
     } catch (e) {
       loading = false;
-      return Future.error('CEP Inválido');
+      return Future.error('Invalid Zip Code');
     }
   }
 
@@ -159,7 +159,7 @@ class CartManager extends ChangeNotifier {
       loading = false;
     } else {
       loading = false;
-      return Future.error('Endereço fora do raio de entrega :(');
+      return Future.error('Shipping address outside delivery range :(');
     }
   }
 

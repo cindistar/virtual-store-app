@@ -42,7 +42,7 @@ class ProductListTile extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: 4),
                       child: Text(
-                        'A partir de',
+                        'As of',
                         style: TextStyle(
                           color: Colors.grey[400],
                           fontSize: 12,
@@ -50,7 +50,7 @@ class ProductListTile extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'R\$ ${product.basePrice.toStringAsFixed(2)}',
+                      '\$ ${product.basePrice.toStringAsFixed(2)}',
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w800,
@@ -61,7 +61,7 @@ class ProductListTile extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.only(top: 4),
                         child: Text(
-                          'Sem estoque',
+                          'Out of stock',
                           style: TextStyle(
                             color: Colors.red,
                             fontSize: 10

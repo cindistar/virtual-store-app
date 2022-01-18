@@ -24,7 +24,7 @@ class EditProductScreen extends StatelessWidget {
       value: product,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(editing ? 'Editar Produto' : 'Criar Produto'),
+          title: Text(editing ? 'Edit Product' : 'Create Product'),
           centerTitle: true,
           actions: [
             if (editing)
@@ -51,7 +51,7 @@ class EditProductScreen extends StatelessWidget {
                     TextFormField(
                       initialValue: product.name,
                       decoration: InputDecoration(
-                        hintText: 'Título',
+                        hintText: 'Title',
                         border: InputBorder.none,
                       ),
                       style: TextStyle(
@@ -59,7 +59,7 @@ class EditProductScreen extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                       validator: (name) {
-                        if (name.length < 6) return 'Título muito curto';
+                        if (name.length < 6) return 'Title is too short';
                         return null;
                       },
                       onSaved: (name) => product.name = name,
@@ -67,7 +67,7 @@ class EditProductScreen extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: 4),
                       child: Text(
-                        'A partir de',
+                        'As of',
                         style: TextStyle(
                           color: Colors.grey[600],
                           fontSize: 13,
@@ -75,7 +75,7 @@ class EditProductScreen extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'R\$...',
+                      '\$...',
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -85,7 +85,7 @@ class EditProductScreen extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: 16),
                       child: Text(
-                        'Descrição',
+                        'Description',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
@@ -98,12 +98,12 @@ class EditProductScreen extends StatelessWidget {
                         fontSize: 16,
                       ),
                       decoration: InputDecoration(
-                        hintText: 'Descrição',
+                        hintText: 'Description',
                         border: InputBorder.none,
                       ),
                       maxLines: null,
                       validator: (desc) {
-                        if (desc.length < 10) return 'Descrição muito curta';
+                        if (desc.length < 10) return 'Description is too short';
                         return null;
                       },
                       onSaved: (desc) => product.description = desc,
@@ -142,7 +142,7 @@ class EditProductScreen extends StatelessWidget {
                                         AlwaysStoppedAnimation(Colors.white),
                                   )
                                 : const Text(
-                                    'Salvar',
+                                    'Save',
                                     style: TextStyle(
                                       fontSize: 18,
                                     ),

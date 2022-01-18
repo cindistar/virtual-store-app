@@ -43,7 +43,7 @@ class CreditCardWidget extends StatelessWidget {
             },
             textColor: Colors.white,
             padding: EdgeInsets.zero,
-            child: Text('Virar cartão'),
+            child: Text('Turn the card'),
           )
         ],
       ),

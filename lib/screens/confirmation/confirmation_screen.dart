@@ -12,7 +12,7 @@ class ConfirmationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pedido ${order.formattedId} Confirmado'),
+        title: Text('Confirmed ${order.formattedId} Order'),
         centerTitle: true,
       ),
       body: Center(
@@ -34,7 +34,7 @@ class ConfirmationScreen extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'R\$ ${order.price.toStringAsFixed(2)}',
+                      '\$ ${order.price.toStringAsFixed(2)}',
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         color: Colors.black,

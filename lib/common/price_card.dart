@@ -23,7 +23,7 @@ class PriceCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              'Resumo do pedido',
+              'Order summary',
               textAlign: TextAlign.start,
               style: TextStyle(
                 fontWeight: FontWeight.w600,
@@ -40,7 +40,7 @@ class PriceCard extends StatelessWidget {
                   'Subtotal',
                 ),
                 Text(
-                  'R\$ ${productsPrice.toStringAsFixed(2)}',
+                  '\$ ${productsPrice.toStringAsFixed(2)}',
                 ),
               ],
             ),
@@ -53,10 +53,10 @@ class PriceCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Entrega',
+                    'Deliver fee',
                   ),
                   Text(
-                    'R\$ ${deliveryPrice.toStringAsFixed(2)}',
+                    '\$ ${deliveryPrice.toStringAsFixed(2)}',
                   ),
                 ],
               ),

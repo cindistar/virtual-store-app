@@ -20,14 +20,14 @@ class ImageSourceSheet extends StatelessWidget {
           ratioY: 1.0,
         ),
         androidUiSettings: AndroidUiSettings(
-          toolbarTitle: 'Editar Imagem',
+          toolbarTitle: 'Edit Image',
           toolbarColor: Theme.of(context).primaryColor,
           toolbarWidgetColor: Colors.white,
         ),
         iosUiSettings: IOSUiSettings(
-          title: 'Editar Imagem',
-          cancelButtonTitle: 'Cancelar',
-          doneButtonTitle: 'Concluir',
+          title: 'Edit Imagem',
+          cancelButtonTitle: 'Cancel',
+          doneButtonTitle: 'Finish',
         ));
     if (croppedFile != null) {
       onImageSelected(croppedFile);
@@ -51,7 +51,7 @@ class ImageSourceSheet extends StatelessWidget {
                 editImage(file.path, context);
               },
               child: Text(
-                'Câmera',
+                'Camera',
               ),
             ),
             // ignore: deprecated_member_use
@@ -62,7 +62,7 @@ class ImageSourceSheet extends StatelessWidget {
                 editImage(file.path, context);
               },
               child: Text(
-                'Galeria',
+                'Galery',
               ),
             ),
           ],
@@ -70,11 +70,11 @@ class ImageSourceSheet extends StatelessWidget {
       );
     else
       return CupertinoActionSheet(
-        title: Text('Selecionar foto para o item'),
-        message: Text('Escolha a origem da foto'),
+        title: Text('Select photo to the item'),
+        message: Text('Choose the photo origin'),
         cancelButton: CupertinoActionSheetAction(
           onPressed: Navigator.of(context).pop,
-          child: Text('Cancelar'),
+          child: Text('Cancel'),
         ),
         actions: [
           CupertinoActionSheetAction(
@@ -84,7 +84,7 @@ class ImageSourceSheet extends StatelessWidget {
                   await picker.getImage(source: ImageSource.camera);
               editImage(file.path, context);
             },
-            child: Text('Câmera'),
+            child: Text('Camera'),
           ),
           CupertinoActionSheetAction(
             onPressed: () async {
@@ -92,7 +92,7 @@ class ImageSourceSheet extends StatelessWidget {
                   await picker.getImage(source: ImageSource.camera);
               editImage(file.path, context);
             },
-            child: Text('Galeria'),
+            child: Text('Galery'),
           ),
         ],
       );

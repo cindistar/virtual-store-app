@@ -20,7 +20,7 @@ class LoginCard extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  'Faça login para acessar',
+                  'Login in to access',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 18,

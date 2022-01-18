@@ -32,7 +32,7 @@ class _CepInputFieldState extends State<CepInputField> {
             enabled: !cartManager.loading,
             controller: cepController,
             decoration: InputDecoration(
-                isDense: true, labelText: 'CEP', hintText: '12.345-678'),
+                isDense: true, labelText: 'Zip Code', hintText: '12.345-678'),
             inputFormatters: [
               FilteringTextInputFormatter.digitsOnly,
               CepInputFormatter(),
@@ -40,8 +40,8 @@ class _CepInputFieldState extends State<CepInputField> {
             keyboardType: TextInputType.number,
             validator: (cep) {
               if (cep.isEmpty)
-                return 'Campo obrigatório';
-              else if (cep.length != 10) return 'CEP Inválido';
+                return 'Required Field';
+              else if (cep.length != 10) return 'Invalid Zip Code';
               return null;
             },
           ),
@@ -73,7 +73,7 @@ class _CepInputFieldState extends State<CepInputField> {
             textColor: Colors.white,
             color: primaryColor,
             disabledColor: primaryColor.withAlpha(100),
-            child: Text('Buscar CEP'),
+            child: Text('Search Zip Code'),
           ),
         ],
       );
@@ -84,7 +84,7 @@ class _CepInputFieldState extends State<CepInputField> {
           children: [
             Expanded(
               child: Text(
-                'CEP: ${widget.address.zipCode}',
+                'Zip Code: ${widget.address.zipCode}',
                 style: TextStyle(
                   color: primaryColor,
                   fontWeight: FontWeight.w600,

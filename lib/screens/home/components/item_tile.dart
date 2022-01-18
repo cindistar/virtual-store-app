@@ -37,14 +37,14 @@ class ItemTile extends StatelessWidget {
                       .read<ProductManager>()
                       .findProductById(item.product);
                   return AlertDialog(
-                    title: Text('Editar item'),
+                    title: Text('Edit item'),
                     content: product != null
                         ? ListTile(
                             contentPadding: EdgeInsets.zero,
                             leading: Image.network(product.images.first),
                             title: Text(product.name),
                             subtitle: Text(
-                                'R\$ ${product.basePrice.toStringAsFixed(2)}'),
+                                '\$ ${product.basePrice.toStringAsFixed(2)}'),
                           )
                         : null,
                     actions: [
@@ -55,7 +55,7 @@ class ItemTile extends StatelessWidget {
                           Navigator.of(context).pop();
                         },
                         textColor: Colors.red,
-                        child: Text('Excluir'),
+                        child: Text('Delete'),
                       ),
                       // ignore: deprecated_member_use
                       FlatButton(
@@ -70,7 +70,7 @@ class ItemTile extends StatelessWidget {
                           Navigator.of(context).pop();
                         },
                         child:
-                            Text(product != null ? 'Desvincular' : 'Vincular'),
+                            Text(product != null ? 'Attach' : 'Detach'),
                       ),
                     ],
                   );

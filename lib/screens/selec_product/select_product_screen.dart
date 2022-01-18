@@ -7,7 +7,7 @@ class SelectProductScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Vincular Produto'),
+        title: Text('Attach Product'),
         centerTitle: true,
       ),
       backgroundColor: Colors.white,
@@ -20,7 +20,7 @@ class SelectProductScreen extends StatelessWidget {
               return ListTile(
                 leading: Image.network(product.images.first),
                 title: Text(product.name),
-                subtitle: Text('R\$ ${product.basePrice.toStringAsFixed(2)}'),
+                subtitle: Text('\$ ${product.basePrice.toStringAsFixed(2)}'),
                 onTap: () {
                   Navigator.of(context).pop(product);
                 },

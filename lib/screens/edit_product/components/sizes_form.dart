@@ -14,7 +14,7 @@ class SizesForm extends StatelessWidget {
     return FormField<List<ItemSize>>(
       initialValue: product.sizes,
       validator: (sizes) {
-        if (sizes.isEmpty) return 'Insira um tamanho';
+        if (sizes.isEmpty) return 'Insert one size';
         return null;
       },
       builder: (state) {
@@ -24,7 +24,7 @@ class SizesForm extends StatelessWidget {
               children: [
                 Expanded(
                   child: Text(
-                    'Tamanhos',
+                    'Sizes',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,

@@ -20,7 +20,7 @@ class AddressCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Endereço de Entrega',
+                    'Shipping Address',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 16,

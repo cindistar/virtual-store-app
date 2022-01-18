@@ -30,7 +30,7 @@ class OrderTile extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'R\$ ${order.price.toStringAsFixed(2)}',
+                  '\$ ${order.price.toStringAsFixed(2)}',
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     color: Colors.black,
@@ -71,17 +71,17 @@ class OrderTile extends StatelessWidget {
                       );
                     },
                     textColor: Colors.red,
-                    child: Text('Cancelar'),
+                    child: Text('Cancel'),
                   ),
                   // ignore: deprecated_member_use
                   FlatButton(
                     onPressed: order.back,
-                    child: Text('Recuar'),
+                    child: Text('Retreat'),
                   ),
                   // ignore: deprecated_member_use
                   FlatButton(
                     onPressed: order.advance,
-                    child: Text('Avançar'),
+                    child: Text('Go ahead'),
                   ),
                   // ignore: deprecated_member_use
                   FlatButton(
@@ -92,7 +92,7 @@ class OrderTile extends StatelessWidget {
                       );
                     },
                     textColor: primaryColor,
-                    child: Text('Endereço'),
+                    child: Text('Address'),
                   ),
                 ],
               ),

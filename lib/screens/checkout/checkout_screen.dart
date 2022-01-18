@@ -19,7 +19,7 @@ class CheckoutScreen extends StatelessWidget {
       child: Scaffold(
         key: scaffoldKey,
         appBar: AppBar(
-          title: Text('Pagamento'),
+          title: Text('Payment'),
           centerTitle: true,
         ),
         body: Consumer<CheckoutManager>(
@@ -36,7 +36,7 @@ class CheckoutScreen extends StatelessWidget {
                       height: 16,
                     ),
                     Text(
-                      'Processando seu pagamento...',
+                      'Processing your payment...',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w800,

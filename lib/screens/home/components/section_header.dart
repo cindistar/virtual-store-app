@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:loja_virtual/common/custom_icon_button.dart';
@@ -21,7 +20,7 @@ class SectionHeader extends StatelessWidget {
                 child: TextFormField(
                   initialValue: section.name,
                   decoration: InputDecoration(
-                      hintText: 'Título', isDense: true, border: InputBorder.none),
+                      hintText: 'Title', isDense: true, border: InputBorder.none),
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w800,

@@ -16,14 +16,14 @@ class CustomDrawerHeader extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Text(
-                'Loja da\nCindi',
+                'Cindi \'s Store ',
                 style: TextStyle(
                   fontSize: 34,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               Text(
-                'Olá, ${userManager.user?.name ?? ''}',
+                'Hello, ${userManager.user?.name ?? ''}',
                 overflow: TextOverflow.ellipsis,
                 maxLines: 2,
                 style: TextStyle(
@@ -41,7 +41,7 @@ class CustomDrawerHeader extends StatelessWidget {
                   }
                 },
                 child: Text(
-                  userManager.isLoggedIn ? 'Sair' : 'Entre ou cadastre-se >',
+                  userManager.isLoggedIn ? 'Logout' : 'Sign in or create account >',
                   style: TextStyle(
                     color: Theme.of(context).primaryColor,
                     fontSize: 16,

@@ -30,15 +30,15 @@ class StoreCard extends StatelessWidget {
       // ignore: deprecated_member_use
       Scaffold.of(context).showSnackBar(
         SnackBar(
-          content: Text('Este dispositivo não possui esta função'),
+          content: Text('This devcie doesn\'t have this function'),
           backgroundColor: Colors.red,
         ),
       );
     }
 
     Future<void> openPhone() async {
-      if (await canLaunch('tel:${store.cleanPhone}')) {
-        launch('tel:${store.cleanPhone}');
+      if (await canLaunch('phone:${store.cleanPhone}')) {
+        launch('phone:${store.cleanPhone}');
       } else {
         showError();
       }
@@ -67,7 +67,7 @@ class StoreCard extends StatelessWidget {
                       },
                       title: Text(map.mapName),
                       leading: Image(
-                        image: map.icon,
+                        image: map.icon as ImageProvider,
                         width: 30,
                         height: 30,
                       ),

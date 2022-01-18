@@ -9,8 +9,8 @@ class CancelOrderDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text('Cancelar ${order.formattedId}?'),
-      content: Text('Esta ação não poderá ser desfeita'),
+      title: Text('Cancel ${order.formattedId}?'),
+      content: Text('This action can\'t be undone'),
       actions: [
         // ignore: deprecated_member_use
         FlatButton(
@@ -19,7 +19,7 @@ class CancelOrderDialog extends StatelessWidget {
             Navigator.of(context).pop();
           },
           textColor: Colors.red,
-          child: Text('Cancelar Pedido'),
+          child: Text('Cancel Order'),
         )
       ],
     );

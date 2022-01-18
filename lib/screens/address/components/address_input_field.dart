@@ -16,7 +16,7 @@ class AddressInputField extends StatelessWidget {
     final primaryColor = Theme.of(context).primaryColor;
     final cartManager = context.watch<CartManager>();
     String emptyValidator(String text) =>
-        text.isEmpty ? 'Campo obrigatório' : null;
+        text.isEmpty ? 'Required Field' : null;
 
     if (address.zipCode != null && cartManager.deliveryPrice == null)
       return Column(
@@ -27,8 +27,8 @@ class AddressInputField extends StatelessWidget {
             initialValue: address.street,
             decoration: InputDecoration(
               isDense: true,
-              labelText: 'Rua/Avenida',
-              hintText: 'Av. Brasil',
+              labelText: 'Street/Avenue',
+              hintText: 'Brasil Avenue',
             ),
             validator: emptyValidator,
             onSaved: (t) => address.street = t,
@@ -41,7 +41,7 @@ class AddressInputField extends StatelessWidget {
                   initialValue: address.number,
                   decoration: InputDecoration(
                     isDense: true,
-                    labelText: 'Número',
+                    labelText: 'Number',
                     hintText: '123',
                   ),
                   inputFormatters: [
@@ -61,8 +61,8 @@ class AddressInputField extends StatelessWidget {
                   initialValue: address.number,
                   decoration: InputDecoration(
                     isDense: true,
-                    labelText: 'Complemento',
-                    hintText: 'Opcional',
+                    labelText: 'Complement',
+                    hintText: 'Optional',
                   ),
                   onSaved: (t) => address.complement = t,
                 ),
@@ -74,7 +74,7 @@ class AddressInputField extends StatelessWidget {
             initialValue: address.district,
             decoration: InputDecoration(
               isDense: true,
-              labelText: 'Bairro',
+              labelText: 'Zone',
               hintText: 'Jd. Satélite',
             ),
             validator: emptyValidator,
@@ -89,7 +89,7 @@ class AddressInputField extends StatelessWidget {
                   initialValue: address.city,
                   decoration: InputDecoration(
                     isDense: true,
-                    labelText: 'Cidade',
+                    labelText: 'City',
                     hintText: 'São Paulo',
                   ),
                   validator: emptyValidator,
@@ -114,9 +114,9 @@ class AddressInputField extends StatelessWidget {
                   maxLength: 2,
                   validator: (e) {
                     if (e.isEmpty) {
-                      return 'Campo obrigatório';
+                      return 'Required Field';
                     } else if (e.length != 2) {
-                      return 'Inválido';
+                      return 'Invalid';
                     }
                     return null;
                   },
@@ -154,7 +154,7 @@ class AddressInputField extends StatelessWidget {
                 }
               }
             } : null,
-            child: Text('Calcular Frete'),
+            child: Text('Calculate shipment costs'),
           ),
         ],
       );

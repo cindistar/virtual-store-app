@@ -34,7 +34,7 @@ class CardFront extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   CardTextField(
-                    title: 'Número',
+                    title: 'Number',
                     hint: '0000 0000 0000 0000',
                     textInputType: TextInputType.number,
                     bold: true,
@@ -44,9 +44,9 @@ class CardFront extends StatelessWidget {
                     ],
                     validator: (number) {
                       if (number.length != 19)
-                        return 'Inválido';
+                        return 'Invalid';
                       else if (detectCCType(number) == CreditCardType.unknown)
-                        return 'Inválido';
+                        return 'Invalid';
                       return null;
                     },
                     onSubmitted: (_) {
@@ -55,12 +55,12 @@ class CardFront extends StatelessWidget {
                     focusNode: numberFocus,
                   ),
                   CardTextField(
-                    title: 'Validade',
-                    hint: '11/2021',
+                    title: 'Expiration date',
+                    hint: '11/2022',
                     textInputType: TextInputType.number,
                     inputFormatters: [dateFormatter],
                     validator: (date) {
-                      if (date.length != 7) return 'Inválido';
+                      if (date.length != 7) return 'Invalid';
                       return null;
                     },
                     onSubmitted: (_) {
@@ -69,12 +69,12 @@ class CardFront extends StatelessWidget {
                     focusNode: dateFocus,
                   ),
                   CardTextField(
-                    title: 'Titular',
-                    hint: 'João da Silva',
+                    title: 'Cardholder',
+                    hint: 'John Smith',
                     textInputType: TextInputType.text,
                     bold: true,
                     validator: (name) {
-                      if (name.isEmpty) return 'Inválido';
+                      if (name.isEmpty) return 'Invalid';
                       return null;
                     },
                     onSubmitted: (_) {

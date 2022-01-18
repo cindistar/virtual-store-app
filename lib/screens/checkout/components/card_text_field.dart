@@ -52,7 +52,7 @@ class CardTextField extends StatelessWidget {
                     ),
                     if (state.hasError)
                       Text(
-                        '  Inválido',
+                        '  Invalid',
                         style: TextStyle(
                           color: Colors.red,
                           fontSize: 9,

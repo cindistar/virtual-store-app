@@ -21,7 +21,7 @@ class _AdminOrdersScreenState extends State<AdminOrdersScreen> {
     return Scaffold(
       drawer: CustomDrawer(),
       appBar: AppBar(
-        title: Text('Todos os Pedidos'),
+        title: Text('All Orders'),
         centerTitle: true,
       ),
       body: Consumer<AdminOrdersManager>(
@@ -39,7 +39,7 @@ class _AdminOrdersScreenState extends State<AdminOrdersScreen> {
                       children: <Widget>[
                         Expanded(
                           child: Text(
-                            'Pedidos de ${ordersManager.userFilter.name}',
+                            'Product ${ordersManager.userFilter.name}',
                             style: TextStyle(
                               fontWeight: FontWeight.w800,
                               color: Colors.white,
@@ -59,7 +59,7 @@ class _AdminOrdersScreenState extends State<AdminOrdersScreen> {
                 if (filteredOrders.isEmpty)
                   Expanded(
                     child: EmptyCard(
-                      title: 'Nenhuma venda realizada!',
+                      title: 'No sales!',
                       iconData: Icons.border_clear,
                     ),
                   )
@@ -98,7 +98,7 @@ class _AdminOrdersScreenState extends State<AdminOrdersScreen> {
                     color: Colors.white,
                     alignment: Alignment.center,
                     child: Text(
-                      'Filtros',
+                      'Filters',
                       style: TextStyle(
                         color: Theme.of(context).primaryColor,
                         fontWeight: FontWeight.w800,

@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
       key: scaffoldKey,
       appBar: AppBar(
         title: Text(
-          'Entrar',
+          'Login',
         ),
         centerTitle: true,
         actions: [
@@ -29,7 +29,7 @@ class LoginScreen extends StatelessWidget {
                 Navigator.of(context).pushReplacementNamed('/signup');
               },
               child: Text(
-                'CRIAR CONTA',
+                'CREATE ACCOUNT',
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.white,
@@ -62,11 +62,11 @@ class LoginScreen extends StatelessWidget {
                     TextFormField(
                       controller: emailController,
                       enabled: !userManager.loading,
-                      decoration: InputDecoration(hintText: 'E-mail'),
+                      decoration: InputDecoration(hintText: 'Email'),
                       keyboardType: TextInputType.emailAddress,
                       autocorrect: false,
                       validator: (email) {
-                        if (!emailValid(email)) return 'E-mail inválido';
+                        if (!emailValid(email)) return 'Invalid email';
                         return null;
                       },
                     ),
@@ -76,12 +76,12 @@ class LoginScreen extends StatelessWidget {
                     TextFormField(
                       controller: passController,
                       enabled: !userManager.loading,
-                      decoration: InputDecoration(hintText: 'Senha'),
+                      decoration: InputDecoration(hintText: 'Password'),
                       autocorrect: false,
                       obscureText: true,
                       validator: (pass) {
                         if (pass.isEmpty || pass.length < 6)
-                          return 'Senha inválida';
+                          return 'Invalid password';
                         return null;
                       },
                     ),
@@ -92,7 +92,7 @@ class LoginScreen extends StatelessWidget {
                         child: Padding(
                           padding: EdgeInsetsDirectional.zero,
                           child: Text(
-                            'Esqueci minha senha',
+                            'Forgot Password',
                             style: TextStyle(
                               color: Colors.black87,
                             ),
@@ -109,7 +109,7 @@ class LoginScreen extends StatelessWidget {
                               valueColor: AlwaysStoppedAnimation(Colors.white),
                             )
                           : Text(
-                              'Entrar',
+                              'Login',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 15,
@@ -128,7 +128,7 @@ class LoginScreen extends StatelessWidget {
                                       // ignore: deprecated_member_use
                                       scaffoldKey.currentState.showSnackBar(
                                         SnackBar(
-                                          content: Text('Falha ao entrar: $e'),
+                                          content: Text('Fail to login: $e'),
                                           backgroundColor: Colors.red,
                                         ),
                                       );
@@ -156,14 +156,14 @@ class LoginScreen extends StatelessWidget {
                     ),
                     SignInButton(
                       Buttons.Facebook,
-                      text: 'Entrar com Facebook',
+                      text: 'Login with Facebook',
                       onPressed: () {
                         userManager.facebookLogin(
                           onFail: (e) {
                             // ignore: deprecated_member_use
                             scaffoldKey.currentState.showSnackBar(
                               SnackBar(
-                                content: Text('Falha ao entrar: $e'),
+                                content: Text('Fail to Login: $e'),
                                 backgroundColor: Colors.red,
                               ),
                             );
