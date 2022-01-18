@@ -21,7 +21,8 @@ The project uses Firebase for (remote) storage of the data and manage the produc
 # App Overview
   
 The application is composed by several functionalities as a typical e-commerce app such as: login, logout,
-  cart screen, orders, payment and so forth. It also includes a 
+  cart screen, orders, payment and so forth. It also includes a "owner mode" in order to be able to edit all the information
+  which will be displayed to the customers.
 
 # Packages
 
