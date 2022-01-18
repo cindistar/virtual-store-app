@@ -2,6 +2,8 @@
 
 A Flutter course from Udemy by Daniel Sciolfi.
 This reference project shows how to implement a vitual store (e-commerce) in Flutter.
+
+
 ![pic_1](https://user-images.githubusercontent.com/45148915/149857889-edc6cbd6-4c15-4652-ac3e-dd7fcb63ae19.png)
 
 ![pic_2](https://user-images.githubusercontent.com/45148915/149857939-d4239112-ba19-4b78-a858-affb9c39d186.png)
